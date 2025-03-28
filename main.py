@@ -52,3 +52,12 @@ elif city == 'Queenstown':
     st.pyplot(fig)
 # st.write(df['embark_town'].unique())
 # st.sidebar.radio('Select City', ('New York', 'Los Angeles', 'Chicago'))
+
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
